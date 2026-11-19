@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_bg"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/tv_header_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DAILY SCHEDULE"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_cycle_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#26FFFFFF"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="3dp"
+            android:text="DAY ↻"
+            android:textColor="#90CAF9"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp">
+
+        <TextView
+            android:id="@+id/tab_daily"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="1"
+            android:background="#33FFFFFF"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:text="DAILY"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tab_workout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_weight="1"
+            android:background="#1AFFFFFF"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:text="WORKOUT"
+            android:textColor="#B0BEC5"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tab_vocal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="3dp"
+            android:layout_weight="1"
+            android:background="#1AFFFFFF"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:text="VOCAL"
+            android:textColor="#B0BEC5"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tab_accent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_weight="1"
+            android:background="#1AFFFFFF"
+            android:gravity="center"
+            android:paddingVertical="5dp"
+            android:text="ACCENT"
+            android:textColor="#B0BEC5"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:background="#1EFFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:id="@+id/tv_pomo_phase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:text="STUDY 50m"
+            android:textColor="#90CAF9"
+            android:textSize="10.5sp"
+            android:textStyle="bold" />
+
+        <Chronometer
+            android:id="@+id/chrono_pomo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_pomo_phase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="#26FFFFFF"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:text="50/10"
+            android:textColor="#E0E0E0"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_pomo_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:background="#26FFFFFF"
+            android:paddingHorizontal="6dp"
+            android:paddingVertical="2dp"
+            android:text="↺"
+            android:textColor="#E0E0E0"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_pomo_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3366BB6A"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="2dp"
+            android:text="START"
+            android:textColor="#A5D6A7"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_routine_items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#1FFFFFFF"
+        android:dividerHeight="1dp"
+        android:scrollbars="none" />
+
+</LinearLayout>
